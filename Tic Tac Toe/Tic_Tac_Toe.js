@@ -34,6 +34,8 @@ boxBtn.forEach((box) => {
 })
 
 function checkWinner(){
+  let isWinner = false;
+
   for(let patterns of winPatterns){
     let posVal1 = boxBtn[patterns[0]].innerText;
     let posVal2 = boxBtn[patterns[1]].innerText;
@@ -42,8 +44,21 @@ function checkWinner(){
     if(posVal1!="" && posVal2!="" && posVal3!=""){
       if(posVal1===posVal2 && posVal2===posVal3){
         displayWinner(posVal1);
+        isWinner = true;
+        return;
       }
     }
+  }
+  let allFilled = true;
+  boxBtn.forEach((box) => {
+    if(box.innerText === ""){
+      allFilled = false;
+    }
+  });
+
+  if(allFilled && !isWinner){
+    msg.innerText = `It's a tie !`;
+    msgContainer.classList.remove("hide");
   }
 }
 
