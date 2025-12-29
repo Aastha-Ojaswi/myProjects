@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="Rock_Paper_Scissors.css">
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+  <div class="main-container">
+    <button class="rock" onclick="
+      var computerChoice = generateComputerChoice();
+      var result = getResult('Rock', computerChoice);
+      displayResult('Rock', computerChoice, result)"><img src="images/Rock.png" alt="Rock"></button>
+
+    <button class="paper" onclick="
+      var computerChoice = generateComputerChoice();
+      var result = getResult('Paper', computerChoice);
+      displayResult('Paper', computerChoice, result)"><img src="images/Paper.png" alt="Paper"></button>
+
+    <button class="scissors" onclick="
+      var computerChoice = generateComputerChoice();
+      var result = getResult('Scissors', computerChoice);
+      displayResult('Scissors', computerChoice, result)"><img src="images/Scissors.png" alt="Scissors"></button>
+  
+    <button class="reset" onclick="
+      localStorage.clear();
+      resetScore();"><img src="images/Reset.png" alt="Reset"></button>
+  </div>  
+
+  <h1 id="user-move"></h1>
+  <h1 id="computer-move"></h1>
+  <h1 id="result"></h1>
+  <h1 id="score"></h1>
+</body>
+<script src="Rock_Paper_Scissors.js"></script>
+</html>
