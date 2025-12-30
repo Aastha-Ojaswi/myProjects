@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Application</title>
+</head>
+<body>
+    <h1><b><i>Course Application</i></b></h1>
+    <hr>
+    <h3><u>College Priority List : </u></h3>
+    <form action="/College">
+        <table border="1">
+            <tr>
+                <th>Sr No.</th>
+                <th>College Name</th>
+                <th>Selection</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td><label for="BITS Pilani">BITS Pilani</label></td>
+                <td><input type="checkbox" id="BITS Pilani" name="college"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><label for="VIT University">VIT University</label></td>
+                <td><input type="checkbox" id="VIT University" name="college"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><label for="Manipal Institute of Technology">Manipal Institute of Technology</label></td>
+                <td><input type="checkbox" id="Manipal Institute of Technology" name="college"></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><label for="Shiv Nadar University">Shiv Nadar University</label></td>
+                <td><input type="checkbox" id="Shiv Nadar University" name="college"></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td><label for="Amity University">Amity University</label></td>
+                <td><input type="checkbox" id="Amity University" name="college"></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td><label for="SRM Institute of Science and Technology,">SRM Institute of Science and Technology,</label></td>
+                <td><input type="checkbox" id="SRM Institute of Science and Technology," name="college"></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td><label for="Thapar Institute of Engineering and Technology">Thapar Institute of Engineering and Technology</label></td>
+                <td><input type="checkbox" id="Thapar Institute of Engineering and Technology" name="college"></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td><label for="PES University">PES University</label></td>
+                <td><input type="checkbox" id="PES University" name="college"></td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td><label for="Lakshmi Narain College of Technology">Lakshmi Narain College of Technology</label></td>
+                <td><input type="checkbox" id="Lakshmi Narain College of Technology" name="college"></td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td><label for="Chandigarh University">Chandigarh University</label></td>
+                <td><input type="checkbox" id="Chandigarh University" name="college"></td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <h3><u>Course List : </u></h3>
+    <form action="/Courses">
+        <table border="1">
+            <tr>
+                <th>Sr No.</th>
+                <th>Courses</th>
+                <th>Selection</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td><label for="Computer Science Engineering">Computer Science Engineering</label></td>
+                <td><input type="checkbox" id="Computer Science Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td><label for="Mechanical Engineering">Mechanical Engineering</label></td>
+                <td><input type="checkbox" id="Mechanical Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td><label for="Mechanical Engineering">Mechanical Engineering</label></td>
+                <td><input type="checkbox" id="Mechanical Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td><label for="Civil Engineering">Civil Engineering</label></td>
+                <td><input type="checkbox" id="Civil Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td><label for="Electronics and Communication Engineering">Electronics and Communication Engineering</label></td>
+                <td><input type="checkbox" id="Electronics and Communication Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td><label for="Chemical Engineering">Chemical Engineering</label></td>
+                <td><input type="checkbox" id="Chemical Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td><label for="Aerospace Engineering">Aerospace Engineering</label></td>
+                <td><input type="checkbox" id="Aerospace Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td><label for="Biotechnology Engineering">Biotechnology Engineering</label></td>
+                <td><input type="checkbox" id="Biotechnology Engineering" name="course"></td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td><label for="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</label></td>
+                <td><input type="checkbox" id="Artificial Intelligence and Data Science" name="course"></td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td><label for="Robotics">Robotics</label></td>
+                <td><input type="checkbox" id="Robotics" name="course"></td>
+            </tr>
+        </table>
+    </form>
+    <hr>
+    <h3><u>Essential Details : </u></h3>
+    <form action="/Details">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="details">
+        <br>
+        <br>
+        <label for="email">Email :</label>
+        <input type="text" id="email" name="details">
+        <br>
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <br>
+        <label for="marks">Marks :</label>
+        <input type="text" id="marks" name="marks">
+        <br>
+        <br>
+        <label for="category">Category :</label>
+        <select name="category" id="category">
+            <option value="" disabled selected>Choose category</option>
+            <option value="OBC">OBC (Other Backward Classes)</option>
+            <option value="GEN">GEN (General)</option>
+            <option value="SC">SC (Scheduled Castes)</option>
+            <option value="ST">ST (Scheduled Tribes)</option>
+        </select>
+        <br>
+        <br>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <br>
+        <label for="submit">Submit :</label>
+        <input type="submit" id="submit" name="submit">
+    </form>
+</body>
+
+</html>
