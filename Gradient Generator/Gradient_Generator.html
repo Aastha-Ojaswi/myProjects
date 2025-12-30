@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="Gradient_Generator.css">
+</head>
+<body>
+  <h1><u><i>Gradient Generator</i></u></h1>
+  <div class="input-container">
+    <div class="color1">
+      <input type="text" placeholder="enter color" class="input" id="c1" oninput="generateColor()">
+      <input type="text" placeholder="enter percentage" class="input" id="percent1" oninput="generateColor()">
+    </div>
+    <div class="color2">
+      <input type="text" placeholder="enter color" class="input" id="c2" oninput="generateColor()">
+      <input type="text" placeholder="enter percentage" class="input" id="percent2" oninput="generateColor()">
+    </div>
+    <div class="color3">
+      <input type="text" placeholder="enter color" class="input" id="c3" oninput="generateColor()">
+      <input type="text" placeholder="enter percentage" class="input" id="percent3" oninput="generateColor()">
+    </div>
+</div>
+<div class="container"></div>
+<button class="reset" onclick="Reset()">Reset</button>
+</body>
+<script src="Gradient_Generator.js"></script>
+</html>
